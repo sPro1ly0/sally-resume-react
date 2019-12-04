@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gold;
+    color: black;
+}
+
+div {
+    padding: 10px;
+}
+  
+h1, h2 {
+font-family: 'Alegreya', sans-serif;
+}
+
+h1 {
+font-size: 2.5em;
+text-align: center;
+}
+
+h2 {
+font-size: 1.5em;
+}
+
+section, footer {
+font-family: 'Muli', sans-serif;
+}
+
+footer {
+text-align: center;
+}
+
+p, li, address {
+font-size: 1em;
+}
+
+li {
+    line-height: 1.5em;
+    margin-bottom: 10px;
+}
+
+img {
+height: 50%;
+width: 50%;
+}
+
+a:hover {
+color:rgb(255, 0, 8);
+font-size: 1.2em;
+}
+
+a:active {
+color: cyan;
+}

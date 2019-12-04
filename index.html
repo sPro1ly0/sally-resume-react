@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sally Student Resume</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya:700|Muli:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="application-root"></div>
+
+    <script
+        src="https://unpkg.com/babel-standalone@6/babel.min.js">
+    </script>
+    <script
+        src="https://unpkg.com/react@16/umd/react.development.js">
+    </script>
+    <script
+        src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+    </script>
+    <script type="text/babel">
+    // ReactDOM.render(tree, soil)
+        //App component
+        function App(props) {
+            console.log(props);
+            return (
+                <div>
+                    <header>
+                        {props.children}
+                    </header>
+
+                    <main>
+                        <section>
+                            <h2>Education</h2>
+                            <ul>
+                                <li><strong>2016 Design and Media B.A.</strong>, University of Hawaii-West Oahu in Kapolei, HI</li>
+                                <li><strong>2012 Academic Diploma</strong>, Noblesville High School in Noblesville, IN</li>
+                            </ul>
+                        </section>
+
+                        <section>
+                        <h2>Job Experience</h2>
+                        <p><strong>Walt Disney Animation Studios, Design Artist (June 14, 2017-Present)</strong></p>
+                        <ul>
+                            <li>I design outfits for new characters and background layouts. Lorem ipsum dolor sit amet consectetur adipiscing elit imperdiet eleifend, dapibus fusce commodo morbi eget nullam nascetur vel, hendrerit elementum posuere enim dignissim eu phasellus velit.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipiscing elit imperdiet eleifend, dapibus fusce commodo morbi eget nullam nascetur vel, hendrerit elementum posuere enim dignissim eu phasellus velit.</li>
+                        </ul>
+                        <p><strong>Starbucks, Barista (May 5, 2011-July 30, 2013)</strong></p>
+                        <ul>
+                            <li>I ran the cash register. I made coffee and many other different drinks for customers. Lorem ipsum dolor sit amet consectetur adipiscing elit imperdiet eleifend, dapibus fusce commodo morbi. </li>
+                        </ul>
+                        </section>
+                    </main>
+
+                    <footer>
+                        <h2>Contact Info</h2>
+                        <address>
+                            <p>Sally Student</p>
+                            <a href="mailto:salystu@hotmail.com" target="_blank">salystu@hotmail.com</a>
+                            <p>020-293-3333</p>
+                            <img src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" alt="Picture of Sally Student" />
+                        </address>
+                    </footer>
+                </div>
+            );
+        };
+
+        ReactDOM.render(
+            <App>
+                <h1>Sally Student Resume</h1>
+             </App>,
+            document.querySelector('#application-root')
+        );
+    </script>
+</body>
+</html>
